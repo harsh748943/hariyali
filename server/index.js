@@ -281,7 +281,8 @@ app.post('/api/admin/tips', authenticateToken, authorizeAdmin, async (req, res) 
 });
 
 
-// --- Start Server ---
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// // --- Start Server ---
+// app.listen(PORT, () => {
+//   console.log(`Server is running on port ${PORT}`);
+// });
+module.exports = app;
